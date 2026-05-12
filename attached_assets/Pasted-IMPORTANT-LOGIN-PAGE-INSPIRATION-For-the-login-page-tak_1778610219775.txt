@@ -1,0 +1,173 @@
+IMPORTANT LOGIN PAGE INSPIRATION:
+
+For the login page, take VERY STRONG UI inspiration from:
+https://21st.dev/community/components/coderislive07/travel-connect-signin/travel-connect
+
+I want the login page to feel:
+- ultra premium
+- futuristic
+- cinematic
+- elegant
+- minimal
+- enterprise AI quality
+
+==================================================
+LOGIN PAGE DESIGN
+==================================================
+
+Create a premium split-screen login page.
+
+LEFT SIDE:
+- cinematic AI atmosphere
+- animated particles/network lines
+- subtle glow effects
+- premium typography
+- monochrome dark visuals
+- elegant branding section
+
+Show:
+Siyadah AI logo
+
+Headline:
+“Command your intelligent enterprise.”
+
+Arabic:
+“قم بإدارة مؤسستك الذكية.”
+
+Subtitle:
+“Access your AI workspace, employees, workflows, and intelligent systems.”
+
+Arabic:
+“ادخل إلى مساحة العمل الذكية الخاصة بك وإدارة الموظفين والأنظمة الذكية.”
+
+Add:
+- animated background
+- floating particles
+- subtle motion
+- soft radial glow
+- futuristic AI feeling
+
+IMPORTANT:
+Do NOT add testimonials.
+Do NOT add fake reviews.
+Do NOT add user quotes.
+
+==================================================
+RIGHT SIDE
+==================================================
+
+Create a luxurious dark glassmorphism login card.
+
+Include:
+- Email field
+- Password field
+- Remember me checkbox
+- Forgot password link
+- Sign In button
+- Google Sign In button
+- smooth hover animations
+- elegant focus states
+
+Button style:
+- premium monochrome
+- soft glow
+- smooth transition
+- futuristic hover effect
+
+==================================================
+LOGIN BEHAVIOR
+==================================================
+
+Frontend only.
+
+Fake login system:
+- user enters any email/password
+- clicking Sign In redirects to /chat
+- save fake session in localStorage
+- keep session after refresh
+- logout clears session
+
+==================================================
+STYLE
+==================================================
+
+Colors:
+- Background: #0D0D0D
+- Card: #151515
+- Borders: #2A2A2A
+- Text: white and gray only
+
+NO colorful gradients.
+NO childish design.
+
+Use:
+- black monochrome aesthetic
+- subtle glass effects
+- premium spacing
+- cinematic shadows
+- smooth borders
+- elegant typography
+
+==================================================
+TYPOGRAPHY
+==================================================
+
+Use:
+- Inter
+- SF Pro Display
+
+Arabic:
+- IBM Plex Sans Arabic
+or
+- Cairo
+
+Typography must feel:
+- luxurious
+- readable
+- premium
+- modern
+
+==================================================
+ANIMATIONS
+==================================================
+
+Use Framer Motion for:
+- fade in
+- card entrance animation
+- subtle floating particles
+- hover effects
+- smooth transitions
+- focus glow
+- cinematic motion
+
+Animations should feel:
+- subtle
+- expensive
+- smooth
+- premium
+
+==================================================
+RESPONSIVE DESIGN
+==================================================
+
+On mobile:
+- stack layout vertically
+- keep premium spacing
+- maintain cinematic atmosphere
+
+==================================================
+FINAL EXPERIENCE
+==================================================
+
+The login page should feel like:
+- a billion-dollar AI startup
+- ChatGPT Enterprise
+- Claude Teams
+- futuristic enterprise software
+- premium AI operating system
+
+The final result must look:
+- elegant
+- cinematic
+- extremely polished
+- highly professional
