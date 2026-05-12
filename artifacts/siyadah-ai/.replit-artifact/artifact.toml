@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Siyadah AI"
+version = "1.0.0"
+id = "artifacts/siyadah-ai"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18480
+
+[services.development]
+run = "pnpm --filter @workspace/siyadah-ai run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/siyadah-ai", "run", "build" ]
+publicDir = "artifacts/siyadah-ai/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18480"
+BASE_PATH = "/"

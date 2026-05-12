@@ -1,0 +1,598 @@
+Create a modern premium AI SaaS frontend called “Siyadah AI”.
+
+IMPORTANT:
+Frontend only.
+No backend.
+No database.
+No real API integration.
+
+But the frontend must behave like a real app using:
+- mock data
+- local state
+- localStorage
+- fake authentication
+- simulated AI responses
+- dynamic AI employee generation
+
+The website must feel:
+- elegant
+- futuristic
+- minimal
+- smooth
+- premium
+- cinematic
+- professional
+- enterprise-grade
+
+Inspired by:
+- ChatGPT
+- Claude
+- z.ai
+- Linear
+- Notion AI
+- Raycast AI
+- Arc Browser
+- Apple Pro apps
+
+==================================================
+TECH STACK
+==================================================
+
+Use:
+- Next.js
+- React
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- shadcn/ui
+
+Use a clean reusable component architecture.
+
+==================================================
+ROUTES
+==================================================
+
+Ensure these routes work correctly:
+
+/        → Landing page
+/login   → Login page
+/chat    → Main AI workspace chat page
+
+No 404 errors.
+
+==================================================
+STYLE
+==================================================
+
+Design style:
+- black and white only
+- ultra minimal
+- premium SaaS
+- enterprise-level UI
+- clean spacing
+- smooth borders
+- subtle shadows
+- cinematic AI feeling
+
+Colors:
+- Background: #0D0D0D
+- Cards: #151515
+- Borders: #2A2A2A
+- Text primary: #FFFFFF
+- Text secondary: #A1A1A1
+
+NO colorful gradients.
+NO childish design.
+NO clutter.
+
+Use only monochrome effects:
+- dark glassmorphism
+- soft radial glows
+- subtle grid texture
+- smooth vignette
+- spotlight hover effects
+- glowing borders
+
+==================================================
+LANGUAGES
+==================================================
+
+Support two languages:
+1. English as default
+2. Arabic as secondary
+
+Requirements:
+- Add language switcher
+- English uses LTR
+- Arabic uses RTL
+- Arabic layout must feel clean and correct
+- Arabic text must be modern, readable, and professional
+- Save selected language in localStorage
+
+Use Arabic font:
+- IBM Plex Sans Arabic
+or
+- Cairo
+
+English font:
+- Inter
+or
+- SF Pro Display
+
+==================================================
+1. LANDING PAGE
+==================================================
+
+Create a premium cinematic landing page.
+
+Include:
+- modern navbar
+- language switcher
+- animated hero section
+- AI text effect
+- CTA buttons
+- features section
+- AI agents section
+- automation section
+- footer
+
+Hero title:
+“Your AI Operating System”
+
+Arabic:
+“نظامك الذكي لإدارة الأعمال بالذكاء الاصطناعي”
+
+Subtitle:
+“Chat, automate, analyze, and build with Siyadah AI.”
+
+Arabic subtitle:
+“تحدث، أتمت، حلّل، وابنِ باستخدام سيادة AI.”
+
+Important:
+- Center the hero content perfectly vertically and horizontally.
+- The hero must not be too high.
+- Add better spacing between title, subtitle, and buttons.
+- Make the hero premium, not empty.
+- Add subtle animated background effects and spotlight lighting.
+- Keep everything black and white.
+
+==================================================
+2. LOGIN PAGE
+==================================================
+
+Create a modern premium login page.
+
+Strong inspiration:
+https://21st.dev/community/components/coderislive07/travel-connect-signin/travel-connect
+
+Do not copy it exactly.
+Use it as inspiration and redesign it with Siyadah AI branding.
+
+Login page requirements:
+- elegant split layout
+- premium dark monochrome style
+- animated background
+- modern login card
+- email input
+- password input
+- Google sign-in button
+- smooth hover animations
+- clean typography
+- responsive design
+- Arabic RTL support
+
+IMPORTANT:
+Remove any testimonial section completely.
+
+Do NOT include:
+“Siyadah AI transformed how our teams operate — it's not just a tool, it's an operating system for intelligence.”
+
+Do NOT include:
+- Khalid Al-Rashidi
+- CTO, Horizon Capital
+- KA avatar
+- any testimonial card
+
+Fake login behavior:
+- User enters any email/password
+- Click Sign In
+- Save fake session in localStorage
+- Redirect to /chat
+- Keep user logged in after refresh
+- Add logout button
+- If not logged in and user opens /chat, redirect to /login
+
+==================================================
+3. CHAT PAGE / AI WORKSPACE
+==================================================
+
+Create a premium AI workspace inspired by:
+- ChatGPT
+- Claude
+- z.ai
+- Linear
+- futuristic AI operating systems
+
+IMPORTANT:
+The chat page should NOT be a normal dashboard.
+It should focus only on:
+1. chatting
+2. AI employees appearing dynamically
+
+Final layout:
+
+LEFT:
+Ultra minimal sidebar
+
+CENTER:
+Main AI chat
+
+RIGHT:
+Dynamic AI employees panel
+
+==================================================
+LEFT SIDEBAR
+==================================================
+
+Make the left sidebar very minimal.
+
+ONLY KEEP:
+- Siyadah AI logo
+- New Chat button
+- Settings button
+- Logout button
+- user profile at bottom
+
+REMOVE completely:
+- Search
+- Recent chats
+- AI Agents menu
+- Workflows menu
+- Knowledge Base menu
+- Platform section
+- all extra navigation items
+
+The sidebar should feel:
+- small
+- elegant
+- premium
+- icon-based
+- distraction-free
+
+==================================================
+CENTER CHAT AREA
+==================================================
+
+Include:
+- messages
+- system events
+- typing animation
+- simulated AI responses
+- streaming response effect
+- markdown support
+- code block styling
+- auto-scroll behavior
+- suggested prompt chips
+- premium input area
+
+Input area:
+- rounded textarea
+- attachment icon
+- microphone icon
+- send button
+- glassmorphism feel
+- soft glow border
+- animated focus state
+- smooth hover effects
+
+Chat behavior:
+- User can type messages
+- Messages appear instantly
+- AI responds with simulated responses
+- Responses should feel useful and realistic
+- Chat history saved in localStorage
+- New Chat button starts a fresh conversation
+
+==================================================
+RIGHT SIDEBAR — DYNAMIC AI EMPLOYEES
+==================================================
+
+At the beginning:
+- The right sidebar must be empty
+- Show only subtle placeholder text:
+“AI employees will appear here based on your requests.”
+
+Arabic:
+“سيظهر الموظفون الذكيون هنا حسب طلباتك.”
+
+NO default employee cards.
+NO static cards.
+
+==================================================
+DYNAMIC EMPLOYEE CREATION
+==================================================
+
+When the user writes a message in the chat, detect the intent and automatically create a matching AI employee card in the right sidebar.
+
+Example English:
+“I need a sales employee to follow up with leads.”
+
+Result:
+- Sales Employee appears in the right sidebar
+- Status becomes Active
+- Card slides in smoothly
+- System message appears:
+“Sales Employee joined the workspace.”
+- AI replies:
+“Done. Your Sales Employee has been created and joined the workspace.”
+
+Example Arabic:
+“أريد موظف مبيعات”
+
+Result:
+- موظف المبيعات appears in the right sidebar
+- Status becomes نشط
+- Card slides in smoothly
+- System message appears:
+“انضم موظف المبيعات إلى مساحة العمل.”
+- AI replies:
+“تم إنشاء موظف المبيعات الخاص بك وانضم إلى مساحة العمل.”
+
+If user later asks for another employee:
+- Keep previous employees visible
+- Add the new employee underneath
+- Do not duplicate the same employee twice
+
+==================================================
+EMPLOYEE DETECTION KEYWORDS
+==================================================
+
+SALES:
+English keywords:
+sales, lead, leads, deal, deals, pipeline, revenue
+Arabic keywords:
+مبيعات، عملاء، ليدز، صفقات، صفقة، إيرادات
+
+Create:
+English: Sales Employee
+Arabic: موظف المبيعات
+Description:
+Lead generation, pipeline management, and deal closing.
+
+MARKETING:
+English keywords:
+marketing, ads, campaign, campaigns, content, social media
+Arabic keywords:
+تسويق، حملات، حملة، إعلانات، إعلان، محتوى، سوشيال ميديا
+
+Create:
+English: Marketing Employee
+Arabic: موظف التسويق
+Description:
+Campaign planning, content strategy, and audience growth.
+
+DATA ANALYST:
+English keywords:
+analytics, data, KPI, dashboard, report, insights
+Arabic keywords:
+بيانات، تحليل، محلل، إحصائيات، مؤشرات، تقارير، لوحة بيانات
+
+Create:
+English: Data Analyst
+Arabic: محلل بيانات
+Description:
+Data modeling, dashboards, KPIs, and business insights.
+
+CUSTOMER SUPPORT:
+English keywords:
+support, customer, ticket, tickets, client, service
+Arabic keywords:
+دعم، خدمة العملاء، عميل، عملاء، تذاكر، استفسارات
+
+Create:
+English: Customer Support Employee
+Arabic: موظف الدعم
+Description:
+Customer inquiries, ticket handling, and service follow-up.
+
+OPERATIONS:
+English keywords:
+operations, workflow, process, automation, tasks
+Arabic keywords:
+عمليات، تشغيل، سير العمل، أتمتة، مهام، إجراءات
+
+Create:
+English: Operations Employee
+Arabic: موظف العمليات
+Description:
+Workflow optimization, processes, and execution tracking.
+
+FINANCE:
+English keywords:
+finance, budget, forecast, payment, invoice, cost
+Arabic keywords:
+مالية، ميزانية، توقعات، دفع، فاتورة، تكلفة، مصاريف
+
+Create:
+English: Finance Advisor
+Arabic: مستشار مالي
+Description:
+Budget planning, forecasting, costs, and financial analysis.
+
+HR:
+English keywords:
+HR, hiring, recruitment, team, employee, culture
+Arabic keywords:
+موارد بشرية، توظيف، فريق، موظفين، ثقافة، مقابلات
+
+Create:
+English: HR Manager
+Arabic: مدير الموارد البشرية
+Description:
+Hiring, onboarding, team planning, and people operations.
+
+LEGAL:
+English keywords:
+legal, contract, compliance, risk, regulation
+Arabic keywords:
+قانوني، عقد، عقود، امتثال، مخاطر، تنظيم
+
+Create:
+English: Legal Counsel
+Arabic: مستشار قانوني
+Description:
+Contracts, compliance, regulatory review, and risk management.
+
+==================================================
+EMPLOYEE CARD DESIGN
+==================================================
+
+Each generated employee card must include:
+- employee name
+- short role description
+- status
+- animated active dot
+- initials avatar
+- subtle glow when active
+
+Statuses:
+English:
+Active, Waiting, Processing, Completed
+
+Arabic:
+نشط، ينتظر، يعالج، مكتمل
+
+Style:
+- premium black card
+- glass dark card feel
+- rounded borders
+- subtle hover glow
+- spotlight hover effect
+- elegant typography
+- premium avatars
+- smooth animated status dot
+
+Animations:
+- slide in from right
+- fade in
+- active pulse glow
+- status transition
+- brief activation glow when created
+
+==================================================
+CHAT SYSTEM EVENTS
+==================================================
+
+When employee is created, add a small elegant system message in the chat.
+
+English:
+“Sales Employee joined the workspace.”
+
+Arabic:
+“انضم موظف المبيعات إلى مساحة العمل.”
+
+System messages should look subtle:
+- small text
+- divider style
+- low opacity
+- premium spacing
+
+==================================================
+SIMULATED AI RESPONSE LOGIC
+==================================================
+
+The AI response should match the language of the user message.
+
+If the user writes Arabic:
+respond in Arabic.
+
+If the user writes English:
+respond in English.
+
+When an employee is created:
+- mention clearly that the employee was created
+- keep the response short and useful
+- do not write long irrelevant technical answers
+
+Example English:
+“Done. Your Sales Employee has been created and joined the workspace. I can now help you organize leads, follow-ups, and deal tracking.”
+
+Example Arabic:
+“تم إنشاء موظف المبيعات الخاص بك وانضم إلى مساحة العمل. يمكنه مساعدتك في متابعة العملاء، تنظيم الليدز، وإدارة الصفقات.”
+
+==================================================
+ANIMATIONS
+==================================================
+
+Use Framer Motion for:
+- page transitions
+- fade-in animations
+- smooth hover effects
+- sidebar animations
+- AI typing animation
+- employee card animation
+- button hover glow
+- smooth scrolling
+- spotlight card effects
+- subtle floating motion
+
+Animations must be:
+- subtle
+- premium
+- smooth
+- cinematic
+- not excessive
+
+==================================================
+BACKGROUND AND VISUAL POLISH
+==================================================
+
+Upgrade the UI to feel more premium.
+
+Add:
+- subtle animated dark background
+- soft radial glows
+- cinematic lighting
+- ultra subtle grid texture
+- smooth vignette effect
+- refined message bubbles
+- premium shadows
+- cleaner typography
+- better spacing
+
+Do not make it colorful.
+Keep it monochrome and elegant.
+
+==================================================
+RESPONSIVE DESIGN
+==================================================
+
+Make the entire app:
+- fully responsive
+- excellent on desktop
+- smooth on tablet
+- usable on mobile
+
+On mobile:
+- right employee panel can become drawer
+- left sidebar can collapse
+- chat remains primary
+
+==================================================
+FINAL EXPERIENCE
+==================================================
+
+The final UI should feel like:
+- a real AI operating system
+- a premium AI workspace
+- a billion-dollar AI startup product
+- ChatGPT mixed with dynamic AI employee orchestration
+- simple, cinematic, and highly polished
+
+Everything should look:
+- refined
+- elegant
+- modern
+- luxurious
+- professional
+- highly usable

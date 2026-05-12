@@ -1,6 +1,6 @@
-# [Project name]
+# Siyadah AI
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A premium cinematic AI SaaS frontend — an AI operating system that lets users orchestrate an AI workforce. Frontend-only, with mock data, local state, and localStorage persistence.
 
 ## Run & Operate
 
@@ -14,6 +14,7 @@ _Replace the heading above with the project's name, and this line with one sente
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
+- Frontend: React + Vite + TailwindCSS + Framer Motion + shadcn/ui + wouter
 - API: Express 5
 - DB: PostgreSQL + Drizzle ORM
 - Validation: Zod (`zod/v4`), `drizzle-zod`
@@ -22,15 +23,32 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- Frontend: `artifacts/siyadah-ai/src/`
+  - Pages: `src/pages/` (LandingPage, LoginPage, ChatPage)
+  - Chat components: `src/components/chat/`
+  - Layout: `src/components/layout/`
+  - Context: `src/context/AppContext.tsx` (language + t() helper)
+  - Translations: `src/lib/translations.ts` (EN + AR)
+  - Auth: `src/lib/auth.ts` (localStorage session)
+  - Employee detection: `src/lib/employeeDetection.ts`
+  - Employee data: `src/lib/employeeData.ts`
+  - Mock AI: `src/lib/mockAI.ts`
+  - Theme: `src/index.css` (monochrome dark palette)
+- API: `artifacts/api-server/src/`
+- DB schema: `lib/db/src/schema/`
+- API contract: `lib/api-spec/openapi.yaml`
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Frontend-only app: no backend, no API calls. All state in React + localStorage.
+- Fake auth: any email/password saves a session to localStorage, redirects to /chat.
+- Dynamic AI employees: keyword detection in chat messages triggers employee card creation.
+- Bilingual: English (LTR) + Arabic (RTL) with IBM Plex Sans Arabic font. Language saved to localStorage.
+- Always-dark: monochrome black/white design — #0D0D0D background, no colorful gradients.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Siyadah AI is a premium AI workspace where users chat with an AI that dynamically creates AI "employees" based on the conversation. Landing page showcases the product; login gates the workspace; the chat page shows a 3-column layout (minimal sidebar, chat center, AI employees panel).
 
 ## User preferences
 
@@ -38,7 +56,9 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The `t()` function in AppContext uses flat dot-notation keys (e.g. `"hero.cta_primary"`), NOT nested object paths.
+- localStorage keys: `siyadah_session`, `siyadah_language`, `siyadah_chat_history`
+- Arabic RTL: set via `document.documentElement.dir` when language changes.
 
 ## Pointers
 
