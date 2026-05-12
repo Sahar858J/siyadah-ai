@@ -1,0 +1,229 @@
+Upgrade the Siyadah AI workspace into a REAL interactive AI operating system.
+
+IMPORTANT:
+The current UI is good visually, but now I want REAL frontend interactions and navigation behavior.
+
+==================================================
+1. SETTINGS PANEL / PAGE
+==================================================
+
+When the user clicks the Settings icon in the LEFT SIDEBAR:
+
+DO NOT do nothing.
+
+Instead:
+- open a beautiful animated Settings panel
+OR
+- navigate to a dedicated /settings page
+
+The settings experience must feel premium and real.
+
+==================================================
+SETTINGS CONTENT
+==================================================
+
+Include:
+
+1. Profile Settings
+- user avatar
+- name
+- email
+- workspace name
+
+2. Language Settings
+- English
+- Arabic RTL toggle
+
+3. Appearance
+- Dark mode
+- Light mode toggle
+(frontend only)
+
+4. AI Settings
+- model selector
+- response style
+- creativity slider
+
+5. Notifications
+- email notifications toggle
+- sound toggle
+
+6. Workspace Settings
+- workspace title
+- AI employee behavior
+- memory settings
+
+==================================================
+SETTINGS DESIGN
+==================================================
+
+Style:
+- premium glassmorphism
+- dark cinematic UI
+- elegant spacing
+- animated tabs
+- smooth hover states
+- minimal monochrome look
+
+Use:
+- Framer Motion
+- smooth slide animation
+- fade transitions
+
+The settings should feel:
+- Apple-level polish
+- Linear quality
+- premium enterprise software
+
+==================================================
+2. AI EMPLOYEE PROFILE / DASHBOARD
+==================================================
+
+IMPORTANT:
+When the user clicks ANY AI employee card on the RIGHT SIDEBAR:
+
+DO NOT just highlight the card.
+
+Instead:
+OPEN a dedicated AI Employee Dashboard page.
+
+Example route:
+- /employee/sales
+- /employee/hr
+- /employee/marketing
+
+==================================================
+EMPLOYEE DASHBOARD CONTENT
+==================================================
+
+Each employee dashboard should feel like:
+- a real digital AI employee workspace
+- a professional AI operating panel
+
+==================================================
+DASHBOARD LAYOUT
+==================================================
+
+TOP SECTION:
+- employee avatar
+- employee name
+- employee role
+- active status
+- animated status indicator
+
+==================================================
+STATS SECTION
+==================================================
+
+Show fake realistic analytics:
+- tasks completed
+- active workflows
+- response speed
+- performance %
+- recent activity
+
+Use:
+- premium stat cards
+- animated counters
+- elegant charts
+
+==================================================
+ACTIVITY SECTION
+==================================================
+
+Show:
+- recent actions
+- fake workflow logs
+- recent tasks
+- AI decisions
+
+Example:
+- “Analyzed sales pipeline”
+- “Generated follow-up workflow”
+- “Processed customer request”
+
+==================================================
+TOOLS SECTION
+==================================================
+
+Show fake tools/modules for each employee.
+
+Example Sales Employee:
+- CRM access
+- lead tracking
+- pipeline management
+- follow-up automation
+
+Example HR:
+- hiring workflows
+- onboarding
+- interview management
+- employee records
+
+==================================================
+EMPLOYEE CHAT PANEL
+==================================================
+
+Inside the employee dashboard:
+add a mini dedicated chat panel to talk directly with that employee.
+
+Example:
+“Sales Employee Assistant”
+
+User can send fake messages and receive simulated employee responses.
+
+==================================================
+ANIMATIONS
+==================================================
+
+Use Framer Motion heavily:
+- dashboard transitions
+- chart animations
+- page entrance
+- hover effects
+- tab transitions
+- glowing active status
+
+Animations should feel:
+- smooth
+- cinematic
+- premium
+- futuristic
+
+==================================================
+DESIGN STYLE
+==================================================
+
+Keep:
+- black monochrome aesthetic
+- glass dark cards
+- subtle glow borders
+- premium spacing
+- clean typography
+- futuristic enterprise feel
+
+==================================================
+IMPORTANT
+==================================================
+
+The entire experience should now feel like:
+- a real AI operating system
+- interactive digital employees
+- futuristic enterprise software
+- premium AI workspace
+
+NOT just a static frontend mockup anymore.
+
+==================================================
+FINAL UX GOAL
+==================================================
+
+The user should feel:
+“I am operating a real AI workforce.”
+
+Everything should feel:
+- alive
+- interactive
+- premium
+- intelligent
+- cinematic

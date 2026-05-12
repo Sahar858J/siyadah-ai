@@ -8,6 +8,7 @@ import NotFound from "@/pages/not-found";
 import LandingPage from "@/pages/LandingPage";
 import LoginPage from "@/pages/LoginPage";
 import ChatPage from "@/pages/ChatPage";
+import EmployeePage from "@/pages/EmployeePage";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ function Router() {
         <Route path="/" component={() => <AnimatedRoute component={LandingPage} />} />
         <Route path="/login" component={() => <AnimatedRoute component={LoginPage} />} />
         <Route path="/chat" component={() => <AnimatedRoute component={ChatPage} />} />
+        <Route path="/employee/:type" component={() => <AnimatedRoute component={EmployeePage} />} />
         <Route component={NotFound} />
       </Switch>
     </AnimatePresence>

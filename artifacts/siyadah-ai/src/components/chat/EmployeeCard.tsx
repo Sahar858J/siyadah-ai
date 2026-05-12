@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "wouter";
 import { useAppContext } from "@/context/AppContext";
 import { EmployeeType } from "@/lib/employeeDetection";
 
@@ -20,6 +21,7 @@ interface Props {
 
 export default function EmployeeCard({ employee }: Props) {
   const { language, t } = useAppContext();
+  const [, setLocation] = useLocation();
   const cardRef = useRef<HTMLDivElement>(null);
   const [spotlight, setSpotlight] = useState({ x: 50, y: 50, visible: false });
 
@@ -55,7 +57,8 @@ export default function EmployeeCard({ employee }: Props) {
       transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative rounded-xl p-3.5 mb-3 overflow-hidden cursor-default"
+      onClick={() => setLocation(`/employee/${employee.type.toLowerCase()}`)}
+      className="relative rounded-xl p-3.5 mb-3 overflow-hidden cursor-pointer"
       style={{
         background: "rgba(21,21,21,0.9)",
         border: "1px solid rgba(255,255,255,0.06)",
